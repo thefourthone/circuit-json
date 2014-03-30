@@ -13,31 +13,29 @@ Examples
     "part":"battery",
     "pos":[0,0],
     "wires":[
-      [0,1,4],
-      [1,1,5],
-      [0,2,0],
-      [0,2,2]
+      [0,1,4], //give power to the attiny85
+      [1,1,5], //give ground to the attiny85
+      [0,2,0], //power for slider
+      [1,2,2]  //ground for slider
     ]
   },
   "1":{
     "part":"attiny85",
     "pos":[0.25,0],
     "wires":[
-      [0,2,1]
+      [0,2,1] //signal cable from slider
     ]
   },
   "2":{
     "part":"slider",
     "pos":[0.5,0],
-    "wires":[
-      []
-    ]
+    "wires":[] //all wires are already accounted for
   },
   "attiny85":{
     "height":0.5,
     "width":0.25,
     "pinout":[
-      [],
+      [],  //leaving a blank pin to make pin numbering match the datasheet
       [0,0],
       [0,0.16],
       [0,0.33],
