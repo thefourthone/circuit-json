@@ -7,7 +7,7 @@ A simple specification for a circuit diagram file type. As suggested by the name
 
 Examples
 --------
-```json
+```javascript
 {
   "0":{
     "part":"battery",
@@ -81,5 +81,10 @@ Object types are objects with `height`, `width` and `pinout` values. They are st
 ###Layout
 
 Layout is defined by successive numerical string indices containing `part`, `pos` and `wire` values.
+
+`wire` is defined as an array of wire objects.
+a wire object is an array containing 3 values: pin on the originating part, index of other part, and pin on the other part. 
+
+
 
 
