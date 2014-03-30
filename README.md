@@ -70,6 +70,16 @@ Examples
 
 Structure
 ---------
-The data can be separated into to main types: object types and layout. 
+The data can be separated into to main types: object types and layout. Object types correspond to parts used in the circuit whereas layout describes how the parts are placed and how they are wired.
+
+###Object Types
+
+Object types are objects with `height`, `width` and `pinout` values. They are stored in the main object such that their index is a non-mumerical string.
+
+`pinout` is an array of pin locations. Pin locations are arrays of length 2. The first element is the x cordinate in reference to the top left corner of the part; the second is the y component.
+
+###Layout
+
+Layout is defined by successive numerical string indices containing `part`, `pos` and `wire` values.
 
 
